@@ -1,16 +1,20 @@
 package logicaNegocio;
 
 public class Leon extends Animal {
-    void EmitirSonido(){
-Animal leon = new Leon ();
-assertEquals("Rugido", leon.emitirSonido());
+    private final TipoHabitat habitat = TipoHabitat.TERRESTRE;
+
+    
+    public String emitirSonido() {
+        return "Rugido";
     }
-    void ObtenerDieta() {
-        Animal leon = new Leon();
-        assertEquals("Carnivoro", leon.obtenerDieta());
+
+    
+    public String obtenerDieta() {
+        return "Carnívoro";
     }
-    void LeonHabitat() {
-        Animal leon = new Leon();
-        assetEquals(TipoHabitat.TERRESTRE, leon.getHabitat());
+
+    public TipoHabitat getHabitat() {
+        return habitat;
     }
 }
+

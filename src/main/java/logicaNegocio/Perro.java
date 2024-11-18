@@ -1,21 +1,23 @@
 package logicaNegocio;
 
-public class Perro {
-   void EmitirSonido() {
-        Animal perro = new Perro();
-        assertEquals("Ladrido", perro.emitirSonido());
+public class Perro extends Animal implements Domestico {
+    private final TipoHabitat habitat = TipoHabitat.TERRESTRE;
+
+    public String emitirSonido() {
+        return "Ladrido";
     }
-    void ObtenerDieta() {
-        Animal perro = new Perro();
-        assertEquals("Omnívoro", perro.obtenerDieta());
+
+    public String obtenerDieta() {
+        return "Omnívoro";
     }
-    void PerroHabitat() {
-        Animal perro = new Perro();
-        assertEquals(TipoHabitat.TERRESTRE, perro.getHabitat());
+
+    public String interactuarConHumano() {
+        return "El perro mueve la cola y ladra de felicidad";
     }
-    void PerroInteractuarConHumano() {
-        Domestico perro = new Perro();
-        assertEquals("El perro mueve la cola y ladra de felicidad", perro.interactuarConHumano());
+
+    public TipoHabitat getHabitat() {
+        return habitat;
     }
 }
+
 
