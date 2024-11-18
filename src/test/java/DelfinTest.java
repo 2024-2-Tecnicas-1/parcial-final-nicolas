@@ -21,8 +21,8 @@ public class DelfinTest extends AnimalTest {
     }
 
     @Test
-    void testDelfinHabitat() {
+    void testdelfinHabitat() {
         Animal delfin = new Delfin();
-        assertEquals(TipoHabitat.ACUATICO, delfin.getHabitat());
+        assertEquals(TipoHabitat.ACUATICO, delfin.obtenerHabitad());
     }
 }

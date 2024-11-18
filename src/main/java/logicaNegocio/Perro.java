@@ -15,8 +15,9 @@ public class Perro extends Animal implements Domestico {
         return "El perro mueve la cola y ladra de felicidad";
     }
 
-    public TipoHabitat getHabitat() {
-        return habitat;
+    @Override
+    public String obtenerHabitad() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
 

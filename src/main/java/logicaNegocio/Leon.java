@@ -13,8 +13,9 @@ public class Leon extends Animal {
         return "Carnívoro";
     }
 
-    public TipoHabitat getHabitat() {
-        return habitat;
+    @Override
+    public String obtenerHabitad() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
 

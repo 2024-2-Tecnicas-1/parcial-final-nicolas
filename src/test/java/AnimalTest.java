@@ -10,10 +10,10 @@ public abstract class AnimalTest {
     @Test
     void testHabitatSetterAndGetter() {
         Animal leon = new Leon();
-        assertEquals(TipoHabitat.TERRESTRE, leon.getHabitat());
+        assertEquals(TipoHabitat.TERRESTRE, leon.obtenerHabitad());
         
         Animal delfin = new Delfin();
-        assertEquals(TipoHabitat.ACUATICO, delfin.getHabitat());
+        assertEquals(TipoHabitat.ACUATICO, delfin.obtenerHabitad());
     }
 
     @Test

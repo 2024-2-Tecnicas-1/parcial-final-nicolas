@@ -10,8 +10,8 @@ public class Delfin extends Animal {
         return "Pescado";
     }
 
-    public TipoHabitat getHabitat() {
-        return habitat;
+    public String obtenerHabitad() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 }
 

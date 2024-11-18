@@ -23,6 +23,6 @@ public class LeonTest extends AnimalTest {
     @Test
     void testLeonHabitat() {
         Animal leon = new Leon();
-        assertEquals(TipoHabitat.TERRESTRE, leon.getHabitat());
+        assertEquals(TipoHabitat.TERRESTRE, leon.obtenerHabitad());
     }
 }

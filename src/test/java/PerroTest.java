@@ -24,7 +24,7 @@ public class PerroTest extends AnimalTest {
     @Test
     void testPerroHabitat() {
         Animal perro = new Perro();
-        assertEquals(TipoHabitat.TERRESTRE, perro.getHabitat());
+        assertEquals(TipoHabitat.TERRESTRE, perro.obtenerHabitad());
     }
 
     @Test
